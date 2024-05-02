@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20+Charted&family=Lugrasimo&display=swap');
+
+body{
+    font-family: "Lugrasimo";
+}
+
+header{
+    background-color: #1d4d72;
+    color: white;
+    display: flex;
+    margin: auto;
+}
+
+h1 {
+    /* border: solid red; */
+    display: flex;
+    margin: auto;
+    margin-left: -120px;
+    /* align-items: auto; */
+}
+/* 
+img{
+    border: solid green;
+} */
+
+.profile{
+    display: flex;
+    margin : auto;
+    align-self: center;
+    max-height: fit-content;
+    max-width: fit-content;
+    padding: 30px;
+}
+body{
+    margin: auto;
+    max-width: 85%;
+}
+
+nav{
+    background-color: black;
+}
+
+.menu{
+    color: white;
+    /* border: solid red; */
+    display: block;
+    text-align: center;
+    padding: .5rem;
+}
+
+main{
+    margin: auto;
+    max-width: 90%;
+    align-self: center;
+}
+
+h2{
+    margin: auto;
+    text-align: center;
+    border-bottom: solid lightgray;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card{
+    display: grid;
+    margin: auto;
+    border: solid lightgray;
+    border-radius: .25em;
+    margin-bottom: 20px;
+    
+}
+
+h3{
+    margin: auto;
+    width: 100%;
+    border-top-left-radius: .25em;
+    border-top-right-radius: .25em;
+    background-color: #1d4d72;
+    color: white;
+    text-align: center;
+}
+
+h5{
+    text-align: center;
+}
+
+footer{
+    background-color: #1d4d72;
+}
+
+p{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: .75em;
+}
+
+#year{
+    margin-bottom: -20px;
+}
+
+#lastModified{
+    color: yellow;
+}
