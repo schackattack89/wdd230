@@ -12,10 +12,9 @@ header{
 }
 
 h1 {
-    /* border: solid red; */
-    display: flex;
+    /* display: flex; */
     margin: auto;
-    margin-left: -120px;
+    /* margin-left: -120px; */
     /* align-items: auto; */
 }
 /* 
