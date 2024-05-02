@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+20+Charted&family=Lugrasimo&display=swap');
+
 
 body{
     font-family: "Lugrasimo";
@@ -9,15 +9,12 @@ header{
     color: white;
     display: flex;
     margin: auto;
+    max-width: 90%;
 }
 
 h1 {
     margin: auto;
 }
-/* 
-img{
-    border: solid green;
-} */
 
 .profile{
     display: flex;
@@ -27,54 +24,76 @@ img{
     max-width: fit-content;
     padding: 30px;
 }
+
 body{
-    margin: auto;
-    max-width: 85%;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 nav{
     background-color: black;
+    margin: auto;
+    max-width: 90%;
+    
 }
 
-.menu{
-    color: white;
-    /* border: solid red; */
+nav ul {
+    list-style-type: none;
+}
+
+nav a{
     display: block;
+    color: white;
     text-align: center;
-    padding: .5rem;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 1px solid white;
+}
+
+.active{
+    color: yellow;
 }
 
 main{
     margin: auto;
-    max-width: 90%;
+    max-width: 80%;
     align-self: center;
 }
 
 h2{
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     border-bottom: solid lightgray;
     padding-top: 2rem;
     margin-bottom: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .card{
-    display: grid;
-    margin: auto;
     border: solid lightgray;
     border-radius: .25em;
     margin-bottom: 20px;
+    box-shadow: 0px 0px 10px darkgray;
     
 }
 
 h3{
-    margin: auto;
-    width: 100%;
+    margin-top: 0;
     border-top-left-radius: .25em;
     border-top-right-radius: .25em;
     background-color: #1d4d72;
     color: white;
     text-align: center;
+    padding: 1rem;
+}
+
+.card ul a{
+    color: blue;
+    text-decoration: underline;
 }
 
 h5{
@@ -83,6 +102,8 @@ h5{
 
 footer{
     background-color: #1d4d72;
+    margin: 0 auto;
+    max-width: 90%;
 }
 
 p{

@@ -1,0 +1,19 @@
+@media screen and (min-width: 600px){
+   nav ul{
+    display: flex;
+    /* justify-content: space-around; */
+   }
+   nav ul li{
+    flex: 100%;
+   }
+   main {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-column-gap: 20px;
+   }
+
+   .card{
+    justify-self: stretch;
+   }
+   
+}
