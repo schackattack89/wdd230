@@ -42,6 +42,8 @@ article p {
 	color: #f99595;
 	background-color: #3a0d31;
     padding: 1rem;
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 
 footer {
