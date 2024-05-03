@@ -1,0 +1,17 @@
+@media screen and (min-width: 420px){
+    main{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    #principle1{
+        grid-column: span 1;
+        grid-column-gap: 10px;
+    }
+    #principle2{
+        grid-column: span 1;
+        grid-column-gap: 10px;
+    }
+    #principle3{
+        grid-column: span 2;
+    }
+ }
