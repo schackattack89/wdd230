@@ -120,3 +120,15 @@ p{
 #lastModified{
     color: yellow;
 }
+
+.designHead{
+    display: block;
+}
+
+.principles{
+    font-size: 3vw;
+}
+
+.name{
+    font-size: 2vw;
+}
