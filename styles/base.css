@@ -182,12 +182,12 @@ p{
 .principles{
     font-size: 3vw;
     padding-top: 15px;
-    padding-bottom: -10px;
+    /* padding-bottom: -10px; */
 }
 
 .name{
     font-size: 2vw;
-    padding-top: -10px;
+    /* padding-top: -10px; */
     padding-bottom: 15px;
 }
 
