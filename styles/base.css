@@ -79,7 +79,7 @@ nav{
     background-color: skyblue;
 }
 
-.navigation:active::before{
+nav ul li a.active::before{
     content: "🌠";
 }
 
