@@ -30,11 +30,61 @@ body{
     max-width: 100%;
 }
 
+#menu{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #5558c1;
+    color: #000;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#menu::before{
+    content: "\2261"; 
+}
+
 nav{
     background-color: black;
     margin: auto;
     max-width: 90%;
     
+}
+
+.navigation{
+    list-style: none;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.navigation li{
+    display: none;
+}
+
+.navigation a{
+    display: block;
+    padding: .75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, .navigation a:active{
+    color: hotpink;
+    background-color: skyblue;
+}
+
+.show li{
+    display: block;
+}
+
+#menu.show::before{
+    content: "X";
 }
 
 nav ul {
