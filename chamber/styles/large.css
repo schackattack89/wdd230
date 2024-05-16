@@ -1,0 +1,52 @@
+@media screen and (min-width: 600px){
+    nav ul{
+     display: flex;
+     /* justify-content: space-around; */
+    }
+    nav ul li{
+     flex: 100%;
+    }
+ 
+    .navigation{
+     display: flex;
+    }
+ 
+    .navigation li{
+     display: block;
+     flex: 1 1 100%;
+    }
+ 
+    .navigation a{
+     text-align: center;
+    }
+ 
+    #menu{
+     display: none;
+    }
+ 
+    main {
+     display: grid;
+     grid-template-columns: 65% 35%;
+     grid-column-gap: 20px;
+    }
+ 
+    .card{
+     justify-self: stretch;
+    }
+ 
+    header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     }
+ 
+     h1 {
+         text-align: center;
+     }
+ 
+     img {
+         max-width: 100%;
+         padding: 30px;
+         padding-right: 10px;    
+     }
+ }

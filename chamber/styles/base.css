@@ -1,0 +1,290 @@
+
+
+body{
+    font-family: "Lugrasimo";
+}
+
+header{
+    background-color: #1d4d72;
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-right: 10px;
+    color: white;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    padding: 30px;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+#menu{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: left;
+    padding: .5rem .75rem;
+    background-color: black;
+    color: #eee;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#menu::before{
+    content: "\2261"; 
+}
+
+nav{
+    background-color: black;
+    margin: auto;
+    max-width: 90%;
+    
+}
+
+.navigation{
+    list-style: none;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.navigation li{
+    display: none;
+}
+
+.navigation a{
+    display: block;
+    padding: .75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, .navigation a:active{
+    color: hotpink;
+    background-color: skyblue;
+}
+
+nav ul li a.active::before{
+    content: "🌠";
+}
+
+.show li{
+    display: block;
+}
+
+#menu.show::before{
+    content: "x";
+
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 1px solid white;
+}
+
+.active{
+    color: yellow;
+}
+
+main{
+    margin: auto;
+    max-width: 80%;
+    align-self: center;
+}
+
+h2{
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: solid lightgray;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.card{
+    border: solid lightgray;
+    border-radius: .5em;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px darkgray;
+    
+}
+
+h3{
+    margin-top: 0;
+    border-top-left-radius: .25em;
+    border-top-right-radius: .25em;
+    background-color: #1d4d72;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card ul a{
+    color: blue;
+    text-decoration: underline;
+}
+
+h5{
+    text-align: center;
+}
+
+footer{
+    background-color: #1d4d72;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+p{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: .75em;
+}
+
+#year{
+    margin-bottom: -20px;
+}
+
+#lastModified{
+    color: yellow;
+}
+
+.designHead{
+    display: block;
+}
+
+.principles{
+    font-size: 3vw;
+    padding-top: 15px;
+    /* padding-bottom: -10px; */
+}
+
+.name{
+    font-size: 2vw;
+    /* padding-top: -10px; */
+    padding-bottom: 15px;
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%
+}
+
+:root {
+  --primary-color: #14814c   ;
+  --secondary-color: #5993f1 ;
+  --accent1-color: #ea6456;
+  --accent2-color: #b96e6e;
+
+  --heading-font: Lugrasimo;
+  --paragraph-font: "Jersey 20 Charted", sans-serif;
+
+  --headline-color-on-white: #14814c;
+  --headline-color-on-color: #ea6456;  
+  --paragraph-color-on-white: #14814c; 
+  --paragraph-color-on-color: #0b0c0e;  
+  --paragraph-background-color: #83f1bc  ;
+  --nav-link-color: #115836;
+  --nav-background-color: #ea6456;
+  --nav-hover-link-color: #14814c;
+  --nav-hover-background-color: #b96e6e;
+}
+
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 25%;
+  height: 3em;
+}
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
