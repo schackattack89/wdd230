@@ -84,7 +84,7 @@ nav{
 }
 
 .navigation a:hover, .navigation a:active{
-    color: hotpink;
+    color: rgb(124, 24, 74);
     background-color: skyblue;
 }
 
