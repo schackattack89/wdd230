@@ -362,15 +362,26 @@ p.colored {
     grid-column-end: 4;
 }
 
-a.join-button {
+.hero-container{
+    position: relative;
     display: inline-block;
-    padding: 10px 20px; /* Adjust padding as needed */
-    background-color: #4CAF50; /* Button color */
-    color: white; /* Button text color */
+}
+
+.button-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a.join-button {
+    padding: 10px 20px;
+    background-color: #14814c;
+    color: #1d4d72;
     text-align: center;
     text-decoration: none;
     border: none;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
