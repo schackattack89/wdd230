@@ -367,9 +367,10 @@ a.join-button:hover{
 }
 
 .join-button {
-    position: absolute;
+    position: fixed;
+    margin-right: -0.9vw;
     top: 34%;
-    right: 7%;
+    left: 43%;
     transform: translate(-50%, -50%);
     padding: 10px 20px;
     background-color: rgb(157, 194, 176);
