@@ -224,7 +224,6 @@ iframe{
   --nav-hover-background-color: #b96e6e;
 }
 
-
 body {
   max-width: 960px;
   margin: 0 auto;
@@ -303,6 +302,8 @@ p.colored {
     padding: 0px;
 }
 
+
+
 #facebook{
     max-width: 50px;
     max-height: 50px;
@@ -359,4 +360,17 @@ p.colored {
     margin: 0 auto;
     grid-column-start: 1;
     grid-column-end: 4;
+}
+
+a.join-button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #4CAF50; /* Button color */
+    color: white; /* Button text color */
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
