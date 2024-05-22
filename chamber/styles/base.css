@@ -300,9 +300,8 @@ p.colored {
     border: solid black;
     border-radius: 15px;
     padding: 0px;
+    display: block;
 }
-
-
 
 #facebook{
     max-width: 50px;
@@ -339,20 +338,18 @@ p.colored {
     margin: 0 auto;
 }
 #authorinfo{
+    display: flex;
     padding: 0;
     margin: 0 auto;
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
 }
 #year{
     padding: 0;
     margin: 0 auto;
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row: span 1;
 }
 #lastModified{
     color: var(--accent1-color);
@@ -367,18 +364,19 @@ a.join-button:hover{
 }
 
 .join-button {
-    position: fixed;
+    position: absolute;
     margin-right: -0.9vw;
     top: 34%;
     left: 43%;
     transform: translate(-50%, -50%);
-    padding: 10px 20px;
+    padding: 6vw 12vw;
     background-color: rgb(157, 194, 176);
     border: solid #115836;
     color: #1d4d72;
     text-align: center;
     text-decoration: none;
     font-weight: bolder;
+    font-size: 6vw;
     border: none;
     border-radius: 5px;
     cursor: pointer;

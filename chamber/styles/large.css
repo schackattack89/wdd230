@@ -83,4 +83,9 @@
      .card:nth-child(5){
         grid-column: span 1;
      }
+
+     .join-button{
+         padding: 2vw 4vw;
+         font-size: 2vw;
+     }
  }
