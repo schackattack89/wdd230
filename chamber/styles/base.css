@@ -362,10 +362,14 @@ p.colored {
     grid-column-end: 4;
 }
 
+a.join-button:hover{
+    background-color: yellow;
+}
+
 .join-button {
     position: absolute;
-    top: 36%;
-    right: 32%;
+    top: 34%;
+    right: 7%;
     transform: translate(-50%, -50%);
     padding: 10px 20px;
     background-color: rgb(157, 194, 176);
