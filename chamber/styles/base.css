@@ -409,3 +409,9 @@ div#wind {
 div#humidity {
     font-size: 2vw;
 }
+
+label{
+    font-size: 1.5vw;
+    display: inline-grid;
+    width: fit-content;
+}
