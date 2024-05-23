@@ -419,7 +419,8 @@ label{
 p#upcoming-events{
     font-weight: bold;
 }
-#mode {
+
+#darkModeToggle {
 	position: fixed;
 	top: 1rem;
 	right: 1rem;
@@ -428,12 +429,8 @@ p#upcoming-events{
 	font-size: 1.5rem;
 }
 
-body:dark-mode {
+.dark-mode {
 	background-color: #000;
 	color: #fff;
 	border-color: #eee; 
-}
-
-main:dark-mode{
-    color: white;
 }
