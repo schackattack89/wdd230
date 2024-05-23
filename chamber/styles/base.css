@@ -394,7 +394,8 @@ div#temp {
 }
 
 img#icon {
-    padding: 0;
+    float: left;
+    padding-left: 20px;
 }
 
 div#description {
