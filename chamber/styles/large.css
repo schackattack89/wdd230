@@ -88,4 +88,11 @@
          padding: 2vw 4vw;
          font-size: 2vw;
      }
+     div#wind {
+      font-size: .5em;
+  }
+  
+  div#humidity {
+      font-size: .5em;
+  }
  }
