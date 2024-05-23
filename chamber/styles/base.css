@@ -387,3 +387,26 @@ a.join-button:hover{
     display: block;
     margin: 0 auto;
 }
+
+div#temp {
+    padding: 10px;
+    display: inline-flex;
+}
+
+img#icon {
+    padding: 0;
+}
+
+div#temp {}
+
+div#description {
+    display: inline-flex;
+}
+
+div#wind {
+    font-size: 2vw;
+}
+
+div#humidity {
+    font-size: 2vw;
+}
