@@ -39,7 +39,7 @@ const displayWeather = (data) => {
         const descElement = document.querySelector("#description");
         const humidElement = document.querySelector("#humidity");
         const windElement = document.querySelector("#wind");
-        cityElement.textContent = `Weather for Scott County`;
+        cityElement.textContent = `Local Weather`;
         tempElement.textContent = `${Math.floor(data['main']['temp'])}°F`;
         const iconUrl = "https://openweathermap.org/img/w/"+data['weather'][0]['icon']+".png";
         iconElement.src = iconUrl;
