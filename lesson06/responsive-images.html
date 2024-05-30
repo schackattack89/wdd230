@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive images</title>
+    <meta name="author" content="Edward Schack">
+    <meta name="description" content="WDD 230 - Web Frontend Development, Edward Schack, course assignment portal">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    <link rel="icon" href="/favicon.ico">
+    <meta property="og:title" content="Edward Schack - WDD 230 - Web Frontend Development">
+    <meta property="og:description" content="website">
+    <meta property="og:image" content="https://schackattack89.github.io/wdd230/images/churchill-downs.jpg">
+    <meta property="og:url" content="https://schackattack89.github.io/wdd230/index.html">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="Provo City Center Temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>
