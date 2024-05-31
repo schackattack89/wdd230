@@ -20,7 +20,7 @@
 <body>
     <button id="darkModeToggle">💡/🕶️</button>
     <header class="header">
-        <img src="../lesson03/images/scottsburg_logo.jpg" alt="Logo Map Pic" class="logo">
+        <img src="../lesson03/images/scottsburg_logo.webp" alt="Logo Map Pic" class="logo">
         <h1 class="heading">City of Scottsburg, IN<br>Chamber of Commerce</h1>
       </header>
       <a id="menu" href="#"></a>
@@ -33,7 +33,11 @@
           </ul>
         </nav>
         <div id="hero-box">
-            <img id="hero-img" src="images/hero.jpg" alt="Scottsburg Water Tower Image">
+            <picture>
+                <source srcset="images/wdd230-small.webp" media="(max-width: 500px)">
+                <source srcset="images/wdd230-large.webp" media="(max-width: 1000px)">
+                <img src="images/wdd230-medium.webp" alt="Stock WDD230 Image" width="1500" height="750">
+            </picture>
         </div>
         <a href="join.html" class="join-button">Join Us</a>
         <main class="home-grid">

@@ -292,9 +292,9 @@ p.colored {
   color: var(--paragraph-color-on-color);
 }
 
-#hero-img{
+#hero-box{
     width: 100%;
-    max-height: auto;
+    max-height: 200px;
     margin: auto;
     justify-self: center;
     border: solid black;
