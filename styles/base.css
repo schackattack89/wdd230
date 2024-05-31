@@ -30,6 +30,12 @@ body{
     max-width: 100%;
 }
 
+.profile{
+    width: 20%;
+    height: auto;
+    display: block;
+}
+
 #menu{
     display: block;
     font-size: 2rem;
