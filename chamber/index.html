@@ -15,7 +15,8 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://schackattack89.github.io/wdd230/chamber/images/hero.jpg">
   <meta property="og:url" content="https://schackattack89.github.io/wdd230/chamber/index.html">
-  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/windchill.js" defer></script>
+  
 </head>
 <body>
     <button id="darkModeToggle">💡/🕶️</button>
@@ -33,10 +34,10 @@
           </ul>
         </nav>
         <div id="hero-box">
-            <picture>
+            <picture class="hero-picture">
                 <source srcset="images/wdd230-small.webp" media="(max-width: 500px)">
                 <source srcset="images/wdd230-large.webp" media="(max-width: 1000px)">
-                <img src="images/wdd230-medium.webp" alt="Stock WDD230 Image" width="1500" height="750">
+                <img src="images/wdd230-medium.webp" alt="Stock WDD230 Image" width="600" height="300">
             </picture>
         </div>
         <a href="join.html" class="join-button">Join Us</a>
@@ -61,14 +62,15 @@
                     <div id="description"></div>
                     <div id="humidity"></div>
                     <div id="wind"></div>
+                    <div id="chill"></div>
                 </div>
-                <label for="forecastDropdown">**Forecast Options**</label>
+                <!-- <label for="forecastDropdown">**Forecast Options**</label>
                 <select id="forecastDropdown">
                     <option value="option1">Current</option>
                     <option disabled value="option2">Hourly</option>
                     <option disabled value="option3">Tomorrow</option>
                     <option disabled value="option4">Next Week</option>
-                </select>
+                </select> -->
             </div>
             <section class="card">
                 <div class="business1">

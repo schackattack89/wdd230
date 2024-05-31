@@ -15,7 +15,7 @@ const getWeather = async (URL) => {
     const response = await fetch(URL);
     if(response.ok){
         weatherList = await response.json();
-        console.log(weatherList);
+        // console.log(weatherList);
     }
     displayWeather(weatherList);
 }
@@ -36,6 +36,7 @@ const displayWeather = (data) => {
         const cityElement = document.querySelector("#city");
         const tempElement = document.querySelector("#temp");
         const iconElement = document.querySelector("#icon");
+        const chillElement = document.querySelector("#chill");
         const descElement = document.querySelector("#description");
         const humidElement = document.querySelector("#humidity");
         const windElement = document.querySelector("#wind");
@@ -49,7 +50,16 @@ const displayWeather = (data) => {
         // descElement.textContent = `Current coditions -- ${captDescription}`;
         humidElement.textContent = `Humidity -- ${data['main']['humidity']}%`;
         windElement.textContent = `Wind Speed -- ${data['wind']['speed']} mph`;
-        switchBackground(data);
+        let tempVariable = data['main']['temp'];
+        let speedVariable = data['wind']['speed'];
+        let chillFactor = Math.floor(35.74 + 0.6215*tempVariable - (35.75*(speedVariable**0.16)) + 0.4275*tempVariable*(speedVariable**.16));
+        if((tempVariable<=50)&&(speedVariable>3.0)){
+            chillElement.textContent = `Wind Chill -- ${chillFactor}°F`;
+        }
+        else{
+            chillElement.textContent = `Wind Chill -- N/A`;
+        }
+        // switchBackground(data);
 }
 
 /*Function to change background image to match weather conditions in searched location */
@@ -91,19 +101,19 @@ inputButton.addEventListener("click", () => {       //function on search button 
   let state = parts[1];                             //defines second part to state variable
   let cityStateData = "https://api.openweathermap.org/geo/1.0/direct?q="+city+","+state+",usa&limit=1&appid="+apiKey;      //creates input string for getLatLon function from user entered city/state
   getLatLon(cityStateData);                            //calls function to get location data for user entry (city/state)
-  switchBackground(weatherList);
+//   switchBackground(weatherList);
 });
 
 /*Event Listener for "ENTER" in text-input field */
-inputText.addEventListener("keypress", function(e) {
-    if(e.key === 'Enter'){    
-        let localeInput = inputText.value;                
-        let parts = localeInput.split(',');               
-        let city = parts[0];                              
-        let state = parts[1];                             
-        let cityStateData = "https://api.openweathermap.org/geo/1.0/direct?q="+city+","+state+",usa&limit=1&appid="+apiKey;
-        getLatLon(cityStateData);   
-    }                            
-});
+// inputText.addEventListener("keypress", function(e) {
+//     if(e.key === 'Enter'){    
+//         let localeInput = inputText.value;                
+//         let parts = localeInput.split(',');               
+//         let city = parts[0];                              
+//         let state = parts[1];                             
+//         let cityStateData = "https://api.openweathermap.org/geo/1.0/direct?q="+city+","+state+",usa&limit=1&appid="+apiKey;
+//         getLatLon(cityStateData);   
+//     }                            
+// });
 
-console.log(currentCondition);
+// console.log(currentCondition);

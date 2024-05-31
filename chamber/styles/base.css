@@ -294,6 +294,7 @@ p.colored {
 
 #hero-box{
     width: 100%;
+    height: fit-content;
     max-height: 200px;
     margin: auto;
     justify-self: center;
@@ -302,6 +303,7 @@ p.colored {
     padding: 0px;
     display: block;
 }
+
 
 #facebook{
     max-width: 50px;
