@@ -49,4 +49,9 @@
         padding: 30px;
         padding-right: 10px;    
     }
+
+    .herolabel{
+        padding: 1vw 2vw;
+        font-size: 2vw;
+    }
 }

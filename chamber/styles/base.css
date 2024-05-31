@@ -294,7 +294,7 @@ p.colored {
 
 #hero-img{
     width: 100%;
-    max-height: 200px;
+    max-height: auto;
     margin: auto;
     justify-self: center;
     border: solid black;
