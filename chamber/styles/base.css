@@ -202,6 +202,7 @@ iframe{
     margin: 0 auto;
     width: 80%;
     height: 100%
+    
 }
 
 :root {
@@ -292,10 +293,9 @@ p.colored {
   color: var(--paragraph-color-on-color);
 }
 
-#hero-box{
+#hero-img{
     width: 100%;
-    height: fit-content;
-    max-height: 200px;
+    max-height: auto;
     margin: auto;
     justify-self: center;
     border: solid black;
@@ -303,7 +303,6 @@ p.colored {
     padding: 0px;
     display: block;
 }
-
 
 #facebook{
     max-width: 50px;
