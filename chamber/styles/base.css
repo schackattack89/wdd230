@@ -435,3 +435,10 @@ p#upcoming-events{
 	color: #fff;
 	border-color: #eee; 
 }
+
+#city-id{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
