@@ -1,3 +1,13 @@
+:root {
+    --primary-color:  #1d4d72   ;
+    --secondary-color: #5993f1 ;
+    --accent1-color: #38a96f;
+    --accent2-color: #b96e6e;
+  
+    --heading-font: Lugrasimo;
+    --serif-font: serif;
+  }
+
 #formmessage{
     display: flex;
     width: 100%;
@@ -13,7 +23,7 @@
 .webform label{
     display: block;
     padding-top: 1rem;
-    color: #9c2c13;
+    color: var(--primary-color);
     font-size: .9rem;
 }
 
@@ -36,11 +46,12 @@
     width: 100%;
     max-width: 400px;
     appearance: none;
+    font-family: var(--serif-font);
 }
 
 .webform input[type="submit"]{
     border: none;
-    background-image: linear-gradient(#9c2c13, #6f200e);
+    background-image: linear-gradient(var(--secondary-color), var(--primary-color));
     color: #fff;
     border-radius: 6px;
     padding: .8rem;
@@ -51,11 +62,11 @@
 }
 
 .webform input:required{
-    border-right: solid 8px red;
+    border-right: solid 8px var(--secondary-color);
 }
 
 .webform input:required:valid{
-    border-bottom: solid 8px green;
+    border-bottom: solid 8px var(--accent1-color);
 }
 
 #r {
@@ -67,7 +78,7 @@
 #rangevalue {
     display: flex;
 	font-size: 2rem;
-	color: navy;
+	color: var(--primary-color);
     justify-content: center;
     padding: 0;
 }
