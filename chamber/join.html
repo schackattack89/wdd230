@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JOIN US! - Mock Chamber of Commerce - Scottsburg, IN</title>
+  <title>Join Us! - Mock Chamber of Commerce - Scottsburg, IN</title>
   <meta name="author" content="Edward Schack">
   <meta name="description" content="WDD 230 - Web Frontend Development, Edward Schack, mock city chamber website, city of Scottsburg, Indiana">
   <link rel="stylesheet" href="../styles/normalize.css">
@@ -33,9 +33,33 @@
             <div id="hero-box">
                 <img id="hero-img" src="images/hero.jpg" alt="Scottsburg Water Tower Image">
             </div>
-            <a href="join.html" class="join-button">Join Us</a>
         </div>
-        <main>
+        <main class="wf1">
+          <form class="joinform" method="get" action="thankyou.html">
+            <fieldset>
+              <legend>Prospective Member Information</legend>
+              <label>First Name <input type="text" name="fname" id="fname" required></label>
+              <label>Last Name <input type="text" name="lname" id="lname" required></label>
+              <label>Title/Position <input type="text" name="title" id="title" pattern="[A-Za-z\- ]{7,}"></label>
+              <label>Email Address <input type="email" name="email" id="email" placeholder="yourname@gmail.com" required></label>
+              <label>Phone Number <input type="tel" name="tel" id="telephone" required></label>
+              <label>Business/Org Name <input type="text" name="business" id="business" required></label>
+              
+              <div id="membership-level">Membership Level:</div>
+              <label class="membership"><input type="radio" name="membership" value="nonprofit">Non Profit</label>
+              <label class="membership"><input type="radio" name="membership" value="bronze">Bronze</label>
+              <label class="membership"><input type="radio" name="membership" value="silver">Silver</label>
+              <label class="membership"><input type="radio" name="membership" value="gold">Gold</label>
+
+              <label>Description<textarea id="description" name="description" rows="4" cols="50" placeholder="Enter a brief description of your business or organization here..."></textarea></label>
+
+            </fieldset>
+            
+            <input type="hidden" name="datetime" id="datetime">
+
+            <label><input id="signup" type="submit" value="Sign Up"></label>
+
+          </form>
         </main>   
         <footer>
             <p id="siteplanlink"><a href="site-plan-rafting.html">Site Plan</a></p>

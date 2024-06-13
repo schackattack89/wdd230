@@ -447,3 +447,63 @@ p#upcoming-events{
     text-align: center;
     font-weight: bold;
 }
+
+.wf1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.joinform{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    justify-self: center;
+    margin: .5em auto;
+    padding: .9em;
+    background-color: #b96e6e;
+    border-radius: 4px;
+}
+
+#signup{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+#membership-level{
+    display: flex;
+    justify-content: left;
+    padding-top: 10px;
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+.membership{
+    display: block;
+    padding-top: .2rem;
+    font-size: .9rem;
+}
+
+.joinform input[type="radio"]{
+    display: inline-block;
+    margin-right: 6px;
+    padding: 1.5em;
+    vertical-align: middle;
+}
+
+.joinform input[type="text"],
+.joinform input[type="tel"],
+.joinform input[type="email"],
+#description
+{
+    background-color: #f1dbdb;
+    display: flex;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 200px;
+    appearance: none;
+}
