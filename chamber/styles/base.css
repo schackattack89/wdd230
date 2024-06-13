@@ -507,3 +507,31 @@ p#upcoming-events{
     width: 200px;
     appearance: none;
 }
+
+.floating-box {
+    display: none;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: fit-content;
+    height: fit-content;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+span{
+    display: block;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+li{
+    font-family: serif;
+}

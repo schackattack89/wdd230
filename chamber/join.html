@@ -46,10 +46,54 @@
               <label>Business/Org Name <input type="text" name="business" id="business" required></label>
               
               <div id="membership-level">Membership Level:</div>
-              <label class="membership"><input type="radio" name="membership" value="nonprofit">Non Profit</label>
-              <label class="membership"><input type="radio" name="membership" value="bronze">Bronze</label>
-              <label class="membership"><input type="radio" name="membership" value="silver">Silver</label>
-              <label class="membership"><input type="radio" name="membership" value="gold">Gold</label>
+              <label class="membership"><input type="radio" name="membership" value="nonprofit" id="nonprofit">Non Profit</label>
+              <label class="membership"><input type="radio" name="membership" value="bronze" id="bronze">Bronze</label>
+              <label class="membership"><input type="radio" name="membership" value="silver" id="silver">Silver</label>
+              <label class="membership"><input type="radio" name="membership" value="gold" id="gold">Gold</label>
+
+              <div id="npBox" class="floating-box">
+                <h2>Non-Profit Benefits</h2>
+                <span>-- Free --</span>
+                <ul>
+                  <li>Access to exclusive resources and materials tailored for non-profit organizations</li>
+                  <li>Discounted rates on events, workshops, and training sessions</li>
+                  <li>Opportunity to network with other non-profit professionals and organizations</li>
+                  <li>Regular updates on industry news, trends, and best practices</li>
+                </ul>
+              </div>
+
+              <div id="bronzeBox" class="floating-box">
+                <h2>Bronze Benefits</h2>
+                <span>-- $250 Annually --</span>
+                <ul>
+                  <li>Basic access to member-only resources and materials</li>
+                  <li>Discounted rates on select events and workshops</li>
+                  <li>Monthly newsletter with industry insights and tips</li>
+                  <li>Access to a members-only online community for networking and collaboration</li>
+                </ul>
+              </div>
+
+              <div id="silverBox" class="floating-box">
+                <h2>Silver Benefits</h2>
+                <span>-- $500 Annually --</span>
+                <ul>
+                  <li>Enhanced access to premium resources and materials</li>
+                  <li>Discounted rates on a wide range of events, workshops, and training programs</li>
+                  <li>Quarterly webinars with industry experts on relevant topics</li>
+                  <li>Priority support and dedicated account manager for assistance</li>
+                </ul>
+              </div>
+
+              <div id="goldBox" class="floating-box">
+                <h2>Gold Benefits</h2>
+                <span>-- $1,000 Annually --</span>
+                <ul>
+                  <li>Full access to all premium resources and materials</li>
+                  <li>Complimentary attendance to all events, workshops, and training programs</li>
+                  <li>Exclusive invitations to VIP networking events and roundtable discussions</li>
+                  <li>Personalized support and access to concierge services for tailored assistance</li>
+                </ul>
+              </div>
 
               <label>Description<textarea id="description" name="description" rows="4" cols="50" placeholder="Enter a brief description of your business or organization here..."></textarea></label>
 
@@ -78,5 +122,6 @@
         </footer>
     <script src="scripts/navmenu.js"></script>
     <script src="../scripts/getdates.js"></script>
+    <script src="scripts/join.js"></script>
 </body>
 </html>
