@@ -300,7 +300,6 @@ p.colored {
 
 #hero-img{
     width: 100%;
-    max-height: auto;
     margin: auto;
     justify-self: center;
     border: solid black;
