@@ -541,6 +541,22 @@ li{
     grid-gap: 10px;
 }
 
+.headline{
+    grid-column: span 2;
+}
+
+.headline h1{
+    margin: 10px 0px 0px 0px;
+    text-shadow: 2px 2px 4px;
+}
+
+.headline p{
+    font-family: serif;
+    font-size: 1.25em;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
 
 .sidebar{
     background-color: #f0f0f0;
