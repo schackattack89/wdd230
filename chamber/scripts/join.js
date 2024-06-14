@@ -1,7 +1,8 @@
-// const accessTime = new Date().now();
-// const dateElement = document.querySelector('#dateTime');
+const accessTime = new Date().toISOString().slice(0, 19).replace('T', ' ');
+const dateElement = document.querySelector('#dateTime');
 
-// dateElement.value() = accessTime;
+dateElement.value = accessTime;
+
 
 const npButton = document.getElementById('nonprofit');
 const bronzeButton = document.getElementById('bronze');
