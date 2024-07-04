@@ -1,0 +1,40 @@
+{
+    "wardInformation": {
+    "familyName": "Schack",
+    "moveInDate": "2020-03-01",
+    "numberOfPeople": "6",
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Edward Schack",
+            "gender": "Male",
+            "birthdate": "1989-03-31"
+        },
+        {
+            "name": "Nicasha Schack",
+            "gender": "Female",
+            "birthdate": "1988-08-01"
+        },
+        {
+            "name": "Keynan Price",
+            "gender": "Male",
+            "birthdate": "2008-08-18"
+        },
+        {
+            "name": "Jalin Prince",
+            "gender": "Male",
+            "birthdate": "2008-08-18"
+        },
+        {
+            "name": "Brooklyn Schack",
+            "gender": "Female",
+            "birthdate": "2015-12-28"
+        },
+        {
+            "name": "Hudson Schack",
+            "gender": "Male",
+            "birthdate": "2021-05-10"
+        }
+    ]
+    }
+}

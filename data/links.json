@@ -1,0 +1,122 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "https://schackattack89.github.io/wdd230/lesson01/holygrail.html",
+                    "title": "Holy Grail"
+                },
+                {
+                    "url": "https://codepen.io/schackattack89/pen/YzMoWxx",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "https://schackattack89.github.io/wdd230/lesson02/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "https://schackattack89.github.io/wdd230/lesson02/design-principles.html",
+                    "title": "Design Principles"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "https://schackattack89.github.io/wdd230/images/combinators.png",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "https://codepen.io/schackattack89/pen/eYaYzqo",
+                    "title": "Pseudo CSS Pen"
+                },
+                {
+                    "url": "https://codepen.io/schackattack89/pen/pomoeNY",
+                    "title": "Nav Code Pen"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/schackattack89/pen/OJYymKd",
+                    "title": "Pseudo Selectors Pen"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "https://schackattack89.github.io/wdd230/lesson05/bom.html",
+                    "title": "DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "https://schackattack89.github.io/wdd230/lesson06/images/landscape.webp",
+                    "title": "WebP Image Formats"
+                },
+                {
+                    "url": "https://schackattack89.github.io/wdd230/lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "https://schackattack89.github.io/wdd230/lesson07/lazyload.html",
+                    "title": "Lazy Load"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "https://schackattack89.github.io/wdd230/lesson08/tablebuild.html",
+                    "title": "Table Build"
+                },
+                {
+                    "url": "https://schackattack89.github.io/wdd230/Form-start/index.html",
+                    "title": "Form Build"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "https://schackattack89.github.io/wdd230/lesson09/new-ward-members.json",
+                    "title": "Ward Member JSON File"
+                },
+                {
+                    "url": "https://schackattack89.github.io/wdd230/lesson09/prophets.html",
+                    "title": "Prophets JSON Practice"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "https://schackattack89.github.io/wdd230/lesson10/weather.html",
+                    "title": "Weather API Example"
+                }
+            ]
+        }
+    ]
+}
