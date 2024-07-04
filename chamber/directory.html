@@ -36,8 +36,24 @@
             </div>
             <a href="join.html" class="join-button">Join Us</a>
         </div>
+        <button id="toggleButton" onclick="toggleMembers()">Toggle Member Views</button>
         <main>
-
+            <section class="card" id="memberCards"></section>
+            <table id="directoryTable">
+                <thead>
+                  <tr>
+                      <th colspan="5" scope="colgroup">Local Businesses</th>
+                  </tr>
+                  <tr>
+                      <th scope="col">Business Name</th>
+                      <th scope="col">Address</th>
+                      <th scope="col">Phone Number</th>
+                      <th scope="col">Website</th>
+                      <th scope="col">Membership Level</th>
+                  </tr>
+                </thead>
+                <tbody class="memberTable"></tbody>
+            </table>
         </main>   
         <footer>
             <p id="siteplanlink"><a href="site-plan-rafting.html">Site Plan</a></p>
@@ -56,5 +72,6 @@
         </footer>
     <script src="scripts/navmenu.js"></script>
     <script src="../scripts/getdates.js"></script>
+    <script src="scripts/membersToggle.js"></script>
 </body>
 </html>

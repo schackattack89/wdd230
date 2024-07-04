@@ -223,6 +223,14 @@ iframe{
   --nav-background-color: #ea6456;
   --nav-hover-link-color: #14814c;
   --nav-hover-background-color: #b96e6e;
+  --back: rgb(0, 0, 0);
+  --back2: hsla(0, 0%, 0%, 0.5);
+  --foredark: hsla(0,0%,10%,1);
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsla(0,0%,20%,.8);
+	--borderlight: hsla(0,0%,33%,.3);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%, 1);
 }
 
 body {
@@ -590,11 +598,111 @@ li{
 #monthly{
     font-size: .5em;
 }
+
+.card a{
+    display: block;
+    font-size: .5em;
+    overflow: hidden;
+
+}
+
+#memberCards{
+    display: flexbox;
+}
+
+#memberCards img{
+    width: 25%;
+}
+
+#memberCards #address{
+    margin: 0 auto;
+    padding: 0;
+}
+
+#memberCards #phone{
+    margin: 0 auto;
+    padding: 0;
+}
+
+#memberCards #website{
+    margin: 0 auto;
+    padding: 0;
+}
+
+#memberCards #level{
+    margin: 0 auto;
+    padding: 0;
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--border);
+	box-shadow: 0 0 10px var(--shadow);
+	border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	color: var(--back);
+	font-size: .85rem;
+}
+
+tr:first-child th, .highlight {
+	background-color: var(--back);
+	color: var(--forelight);
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--borderlight);
+}
+
+th {
+	background-color: var(--back2);
+	font-size: larger;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--zebra);
+}
+
+thead tr:nth-child(even) {
+	background-color: var(--zebra);
+    color: white;
+}
+
+#leading-cell{
+    background-color: black;
+}
+
+#toggleButton{
+    margin-left: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    align-items: center;
+    display: block;
+    border: solid red;
+    border-radius: 5px;
+}
+
 @media screen and (min-width: 600px){
     .photos img:hover{
         box-shadow: 0 0 50px #333;
         border: 1px solid rgba(0,0,0,.3);
         padding: 1px;
+    }
+
+    #memberCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 80%;
+        max-height: 50%;
     }
 }
 
