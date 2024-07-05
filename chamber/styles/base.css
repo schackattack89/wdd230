@@ -212,7 +212,7 @@ iframe{
   --accent2-color: #b96e6e;
 
   --heading-font: Lugrasimo;
-  --paragraph-font: "Jersey 20 Charted", sans-serif;
+  /* --paragraph-font: "Jersey 20 Charted", sans-serif; */
 
   --headline-color-on-white: #14814c;
   --headline-color-on-color: #ea6456;  
@@ -442,10 +442,42 @@ p#upcoming-events{
 	font-size: 1.5rem;
 }
 
+.weather div{
+    color: rgb(109, 159, 10);
+}
+
 .dark-mode {
 	background-color: #000;
 	color: #fff;
 	border-color: #eee; 
+    .card{
+        background-color:#999;
+    }
+    h3{
+        background-color: #333;
+        color: #ccc;
+    }
+    h2, p{
+        color: black;
+    }
+    footer{
+        background-color: #999;
+        p, a{
+            color: black;
+        }
+    }
+    .weather div{
+        color: black;
+    }
+    header{
+        background-color: #999;
+    }
+    h1{
+        color: black;
+    }
+    nav{
+        background-color: #555;
+    }
 }
 
 #city-id{
