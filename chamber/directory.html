@@ -17,6 +17,7 @@
   <script src="scripts/members.js" defer></script>
 </head>
 <body>
+    <button id="darkModeToggle">☀/🌙</button>
     <header class="header">
         <img src="../lesson03/images/scottsburg_logo.jpg" alt="Logo Map Pic" class="logo">
         <h1 class="heading">City of Scottsburg, IN<br>Chamber of Commerce</h1>
@@ -39,7 +40,7 @@
         <button id="toggleButton" onclick="toggleMembers()">Toggle Member Views</button>
         <main>
             <section class="card" id="memberCards"></section>
-            <table id="directoryTable">
+            <table id="directoryTable" style="display: none;">
                 <thead>
                   <tr>
                       <th colspan="5" scope="colgroup">Local Businesses</th>
@@ -73,5 +74,6 @@
     <script src="scripts/navmenu.js"></script>
     <script src="../scripts/getdates.js"></script>
     <script src="scripts/membersToggle.js"></script>
+    <script src="scripts/darkmode.js"></script>
 </body>
 </html>
