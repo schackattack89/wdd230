@@ -1,5 +1,5 @@
 const today = new Date().getDay();
-const showDays = [1, 2, 4];
+const showDays = [1, 2, 3];
 
 if(showDays.includes(today)){
     let banner = document.getElementById("banner");
