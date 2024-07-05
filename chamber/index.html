@@ -36,7 +36,12 @@
             <img src="images/hero.jpg" alt="Scottsburg Water Tower" width="600" height="300">
         </div>
         <a href="join.html" class="join-button">Join Us</a>
+        <div id="banner" style="display: none;">
+            <button id="closeButton">❌</button>
+            Attend this week's Chamber of Commerce meet and greet on Wednesday @ 7:00pm!
+        </div>        
         <main class="home-grid">
+
             <section class="card">
                 <div class="events">
                     <h2>Upcoming Events</h2>
@@ -52,12 +57,16 @@
             <div class="card">
                 <div class="weather">
                     <h2 id="city">.</h2>
-                    <img src="https://schackattack89.github.io/cse121b/final_project/images/sun.jpg" alt="sun image" id="icon">
+                    <img src="" alt="" id="icon">
                     <div id="temp"></div>
-                    <div id="description"></div>
+                    <div id="tempdescription"></div>
                     <div id="humidity"></div>
                     <div id="wind"></div>
                     <div id="chill"></div>
+                    <h3>Forecasted Temps</h3>
+                    <div id="nextDayCast">Today:</div>
+                    <div id="twoDayCast"></div>
+                    <div id="threeDayCast"></div>
                 </div>
                 <!-- <label for="forecastDropdown">**Forecast Options**</label>
                 <select id="forecastDropdown">
@@ -109,5 +118,6 @@
     <script src="scripts/navmenu.js"></script>
     <script src="../scripts/getdates.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

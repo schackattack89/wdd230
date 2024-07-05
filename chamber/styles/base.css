@@ -606,8 +606,9 @@ li{
 
 }
 
-#memberCards{
-    display: flexbox;
+img#icon {
+    float: left;
+    width: max-content;
 }
 
 #memberCards img{
@@ -689,6 +690,29 @@ thead tr:nth-child(even) {
     display: block;
     border: solid red;
     border-radius: 5px;
+}
+
+#banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+#closeButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
 @media screen and (min-width: 600px){
