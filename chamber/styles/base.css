@@ -137,11 +137,13 @@ h2{
     grid-column-end: 3;
 }
 
+
 .card{
     border: solid lightgray;
     border-radius: .5em;
     margin-bottom: 20px;
     box-shadow: 0px 0px 10px darkgray;
+    max-height: 350px;
     
 }
 
@@ -149,10 +151,11 @@ h3{
     margin-top: 0;
     border-top-left-radius: .25em;
     border-top-right-radius: .25em;
-    background-color: #1d4d72;
+    background-color: #c0f89b;
     color: white;
     text-align: center;
     padding: 1rem;
+    font-size: 1.5vw;
 }
 
 .card ul a{
@@ -206,7 +209,7 @@ iframe{
 }
 
 :root {
-  --primary-color: #14814c   ;
+  --primary-color: #0b512e   ;
   --secondary-color: #5993f1 ;
   --accent1-color: #ea6456;
   --accent2-color: #b96e6e;
@@ -214,14 +217,14 @@ iframe{
   --heading-font: Lugrasimo;
   /* --paragraph-font: "Jersey 20 Charted", sans-serif; */
 
-  --headline-color-on-white: #14814c;
+  --headline-color-on-white: #0b512e;
   --headline-color-on-color: #ea6456;  
-  --paragraph-color-on-white: #14814c; 
+  --paragraph-color-on-white: #0b512e; 
   --paragraph-color-on-color: #0b0c0e;  
   --paragraph-background-color: #83f1bc  ;
   --nav-link-color: #115836;
   --nav-background-color: #ea6456;
-  --nav-hover-link-color: #14814c;
+  --nav-hover-link-color: #0b512e;
   --nav-hover-background-color: #b96e6e;
   --back: rgb(0, 0, 0);
   --back2: hsla(0, 0%, 0%, 0.5);
@@ -357,19 +360,27 @@ p.colored {
     grid-column-start: 2;
     grid-column-end: 3;
 }
+
+footer a{
+    color: #1a3c56
+}
+
 #year{
     padding: 0;
     margin: 0 auto;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
     grid-row: span 1;
+    font-size: 1.5vw;
+    background-color: #c6c4c4;
+    color: var(--paragraph-color-on-color);
 }
 #lastModified{
-    color: var(--accent1-color);
+    color: var(--paragraph-color-on-color);
     padding: 0;
     margin: 0 auto;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-start: 3;
+    background-color: #c6c4c4;
+    font-size: 1.5vw;
 }
 
 a.join-button:hover{
@@ -383,7 +394,7 @@ a.join-button:hover{
     left: 45%;
     transform: translate(-50%, -50%);
     padding: 1vw 2vw;
-    background-color: rgb(157, 194, 176);
+    background-color: #d1f5e3;
     border: solid #115836;
     color: #1d4d72;
     text-align: center;
@@ -431,6 +442,7 @@ label{
 
 p#upcoming-events{
     font-weight: bold;
+    font-size: 2vw;
 }
 
 #darkModeToggle {
@@ -443,7 +455,8 @@ p#upcoming-events{
 }
 
 .weather div{
-    color: rgb(109, 159, 10);
+    color: #004280;
+    font-size: 2vw;
 }
 
 .dark-mode {
@@ -528,7 +541,7 @@ td{
     justify-self: center;
     margin: .5em auto;
     padding: .9em;
-    background-color: #b96e6e;
+    background-color: #dd9797;
     border-radius: 4px;
 }
 
@@ -668,6 +681,10 @@ li{
 img#icon {
     float: left;
     width: max-content;
+    background: grey;
+    padding: 0;
+    border-radius: 25px;
+    max-width: 10vw;
 }
 
 #memberCards img{
@@ -773,6 +790,24 @@ thead tr:nth-child(even) {
     top: 0px;
     right: 0px;
 }
+
+figcaption{
+    text-align: center;
+    font-size: 1vw;
+    padding: 0;
+    margin: 0 auto;
+}
+
+figure{
+    padding: 0;
+}
+
+#schools{
+    font-size: 2vw;
+    max-height: fit-content;
+    overflow-y: auto;
+}
+
 
 @media screen and (min-width: 600px){
     .photos img:hover{
