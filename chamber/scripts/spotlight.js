@@ -1,5 +1,4 @@
 const membersUrl = 'https://schackattack89.github.io/wdd230/chamber/data/members.json';
-const spotlight = document.querySelector('#spotlight');
 
 async function getSpotlightMembers() {
     try {
@@ -18,11 +17,14 @@ const displayRandomMembers = (members) => {
         member.level === 'Gold' || member.level === 'Silver'
     );
 
-    const shuffledMembers = shuffleArray(filteredMembers).slice(0, 1);
+    const shuffledMembers = shuffleArray(filteredMembers).slice(0, 3);
 
-    spotlight.innerHTML = '';
+
+    let index = 1;
 
     shuffledMembers.forEach(member => {
+        let currentPane = "#spotlight" + index;
+        let spotlight = document.querySelector(currentPane)
         let card = document.createElement("div"); 
         card.classList.add('spot-item'); 
 
@@ -56,6 +58,8 @@ const displayRandomMembers = (members) => {
         card.append(website);
 
         spotlight.appendChild(card);
+
+        index++;
     });
 }
 
