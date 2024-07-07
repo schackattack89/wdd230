@@ -262,7 +262,8 @@ iframe{
 div#temp {
     padding: 10px;
     display: inline-flex;
-    font-size: 2vw;
+    font-size: 2em;
+    margin-top: 30px;
 }
 
 img#icon {
@@ -281,3 +282,12 @@ div#description {
 div#humidity {
     font-size: 2vw;
 } */
+
+h4{
+    text-align: center;
+}
+
+#description, #humidity, #wind, #chill{
+    text-align: center;
+    padding: 5px;
+}

@@ -47,7 +47,7 @@ const displayWeather = (data) => {
         const description = data['weather'][0]['description'];
         const captDescription = description[0].toUpperCase() + description.substring(1); 
         iconElement.alt = `${data['weather'][0]['description']}`;
-        // descElement.textContent = `Current coditions -- ${captDescription}`;
+        descElement.textContent = `Current coditions -- ${captDescription}`;
         humidElement.textContent = `Humidity -- ${data['main']['humidity']}%`;
         windElement.textContent = `Wind Speed -- ${data['wind']['speed']} mph`;
         let tempVariable = data['main']['temp'];
