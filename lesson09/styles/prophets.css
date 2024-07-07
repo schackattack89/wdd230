@@ -5,8 +5,11 @@ header{
 main{
     margin-left: 2rem;
     margin-right: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 section {
@@ -25,4 +28,14 @@ section {
     box-shadow: 0 0 30px #777;
     height: 200px;
     border: 1px solid #333;
+    margin-top: 10px;
+  }
+
+  p{ 
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  h2{
+    margin: 0 auto;
   }

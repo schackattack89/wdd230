@@ -14,7 +14,7 @@ const displayLinks = (lessons) => {
     lessons.forEach((week) => {
         let weekNumber = document.createElement('li');
 
-        weekNumber.innerHTML = `${week.lesson}`;
+        weekNumber.innerHTML = `${week.lesson}: `;
 
         if(week.links.length == 1){
             let firstActivity = document.createElement('a');
