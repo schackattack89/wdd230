@@ -29,14 +29,14 @@ const displayRandomMembers = (members) => {
         let image = document.createElement("img");
         image.setAttribute('src', member.imgurl);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '350');
-        image.setAttribute('height', '350');
+        image.setAttribute('width', '200');
+        image.setAttribute('height', '200');
 
         let name = document.createElement("h2");
         name.textContent = member.name;
 
         let membership = document.createElement("h3");
-        membership.textContent = member.level;
+        membership.textContent = `(${member.level} Member)`;
 
         let address = document.createElement("p");
         address.textContent = member.address;
@@ -45,6 +45,7 @@ const displayRandomMembers = (members) => {
         phone.textContent = member.phone;
 
         let website = document.createElement("a");
+        website.setAttribute('href', member.website);
         website.innerHTML = member.website;
 
         card.append(image);
