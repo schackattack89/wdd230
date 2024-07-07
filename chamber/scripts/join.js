@@ -40,7 +40,10 @@ goldButton.addEventListener('mouseout', () => {
     goldBox.style.display = 'none';
 });
 
-const accessTime = new Date().toISOString().slice(0, 19).replace('T', ' ');
+// const accessTime = new Date().toISOString().slice(0, 19).replace('T', ' ');
+
+const accessTime = new Date();
+const accessTimeString = accessTime.toLocaleTimeString();
 const dateElement = document.querySelector('#dateTime');
 
-dateElement.value = accessTime;
+dateElement.textContent = `${accessTimeString}`;

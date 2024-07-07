@@ -1,6 +1,6 @@
 function toggleMembers() {
     var element1 = document.getElementById("directoryTable");
-    var element2 = document.getElementById("memberCards");
+    var element2 = document.querySelector('.bizCards');
 
     if (element1.style.display === "block") {
         element1.style.display = "none";

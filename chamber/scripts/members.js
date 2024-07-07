@@ -1,5 +1,5 @@
 const url = 'https://schackattack89.github.io/wdd230/chamber/data/members.json';
-const cards = document.querySelector('.card');
+const cards = document.querySelector('.bizCards');
 const memberTable = document.querySelector('.memberTable');
 
 async function getMemberData() {

@@ -23,12 +23,12 @@
     #menu{
      display: none;
     }
- 
+/*  
     main {
      display: grid;
      grid-template-columns: 65% 35%;
      grid-column-gap: 20px;
-    }
+    } */
  
     .card{
      justify-self: stretch;
