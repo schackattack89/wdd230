@@ -506,6 +506,9 @@ p#upcoming-events{
         background-color: #555;
         color: white;
     }
+    .discovercard p, span, ul, li{
+        color: black;
+    }
 }
 
 #directoryTable{
