@@ -1,28 +1,22 @@
 const membersUrl = 'https://schackattack89.github.io/wdd230/chamber/data/members.json';
 
-async function getSpotlightMembers() {
-    try {
+async function displaySpotlights() {
         const response = await fetch(membersUrl);
-        if (!response.ok) throw new Error('Network response was not ok');
         const data = await response.json();
-        console.log("Fetched data:", data);
-        displayRandomMembers(data.members);
-    } catch (error) {
-        console.error("Fetching error: ", error);
-    }
+        displayTopTier(data.members);
 }
 
-const displayRandomMembers = (members) => {
-    const filteredMembers = members.filter(member => 
+const displayTopTier = (members) => {
+    const silverGoldMembers = members.filter(member => 
         member.level === 'Gold' || member.level === 'Silver'
     );
 
-    const shuffledMembers = shuffleArray(filteredMembers).slice(0, 3);
+    let randomMembers = selectRandomBusiness(silverGoldMembers, 3);
 
 
     let index = 1;
 
-    shuffledMembers.forEach(member => {
+    randomMembers.forEach(member => {
         let currentPane = "#spotlight" + index;
         let spotlight = document.querySelector(currentPane)
         let card = document.createElement("div"); 
@@ -63,12 +57,14 @@ const displayRandomMembers = (members) => {
     });
 }
 
-const shuffleArray = (array) => {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
+function selectRandomBusiness(arr, numItems) {
+    let result = [];
+    for (let i = 0; i < numItems; i++) {
+        let randomIndex = Math.floor(Math.random() * arr.length);
+        result.push(arr[randomIndex]);
+        arr.splice(randomIndex, 1);
     }
-    return array;
+    return result;
 }
 
-getSpotlightMembers();
+displaySpotlights();
