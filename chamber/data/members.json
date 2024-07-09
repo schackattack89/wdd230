@@ -5,7 +5,7 @@
             "address": "1609 W. McClain Ave.",
             "phone": "(812) 752-4142",
             "website": "https://www.gpinscottsburg.com/",
-            "imgurl": "https://schackattack89.github.io/wdd230/chamber/images/businessLogos/GoinPostal.jpg",
+            "imgurl": "https://schackattack89.github.io/wdd230/chamber/images/businessLogos/GoinPostal.webp",
             "level": "Gold"
         },
         {
@@ -13,7 +13,7 @@
             "address": "422 N. Gardner St",
             "phone": "(812) 752-5219",
             "website": "https://www.hrblock.com/local-tax-offices/indiana/scottsburg/422-n-gardner/14676/?otppartnerid=9308&campaignid=pw_mcm_9308_9762&utm_medium=local",
-            "imgurl": "https://schackattack89.github.io/wdd230/chamber/images/businessLogos/HRBlock.jpg",
+            "imgurl": "https://schackattack89.github.io/wdd230/chamber/images/businessLogos/HRBlock.webp",
             "level": "Silver"
         },
         {
@@ -21,7 +21,7 @@
             "address": "59 E. Wardell St.",
             "phone": "(812) 752-5920",
             "website": "https://scottcotitle.com/",
-            "imgurl": "https://schackattack89.github.io/wdd230/chamber/images/businessLogos/HoosierTitle.png",
+            "imgurl": "https://schackattack89.github.io/wdd230/chamber/images/businessLogos/HoosierTitle.webp",
             "level": "Silver"
         },
         {
@@ -29,7 +29,7 @@
             "address": "821 S. Lake Rd. Ste. 337",
             "phone": "(812) 252-4416",
             "website": "https://www.packetpi.com/",
-            "imgurl": "https://schackattack89.github.io/wdd230/chamber/images/businessLogos/PocketPi.png",
+            "imgurl": "https://schackattack89.github.io/wdd230/chamber/images/businessLogos/PocketPi.webp",
             "level": "Bronze"
         },
         {
@@ -37,7 +37,7 @@
             "address": "1670 W. McClain Ave. Ste. 300",
             "phone": "(812) 722-0630",
             "website": "https://www.koehlerbankruptcy.com/",
-            "imgurl": "https://schackattack89.github.io/wdd230/chamber/images/businessLogos/Koehler.png",
+            "imgurl": "https://schackattack89.github.io/wdd230/chamber/images/businessLogos/Koehler.webp",
             "level": "Gold"
         },
         {
@@ -45,7 +45,7 @@
             "address": "1152 Timberhaven Ct.",
             "phone": "(812) 578-4994",
             "website": "https://www.facebook.com/Hellolovecustomdesigns/",
-            "imgurl": "https://schackattack89.github.io/wdd230/chamber/images/businessLogos/HelloLove.jpg",
+            "imgurl": "https://schackattack89.github.io/wdd230/chamber/images/businessLogos/HelloLove.webp",
             "level": "Bronze"
         },
         {
@@ -53,7 +53,7 @@
             "address": "790 White St.",
             "phone": "(812) 752-7576",
             "website": "https://www.manpower.com/en/about-us/locations/scottsburg,-in?utm_source=google&utm_medium=lpm&utm_campaign=manpowerlpm&referer=google.com",
-            "imgurl": "https://schackattack89.github.io/wdd230/chamber/images/businessLogos/Manpower.png",
+            "imgurl": "https://schackattack89.github.io/wdd230/chamber/images/businessLogos/Manpower.webp",
             "level": "Silver"
         }
     ]
