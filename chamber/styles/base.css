@@ -463,53 +463,59 @@ p#upcoming-events{
 	background-color: #000;
 	color: #fff;
 	border-color: #eee; 
-    .card{
+}
+.dark-mode .card{
         background-color:#999;
     }
-    h3{
+.dark-mode h3{
         background-color: #333;
         color: #ccc;
     }
-    h2, p{
+.dark-mode h2, p{
         color: black;
     }
-    footer{
-        background-color: #999;
-        p, a{
-            color: black;
-        }
-    }
-    .weather div{
-        color: black;
-    }
-    header{
+.dark-mode footer{
         background-color: #999;
     }
-    h1{
+.dark-mode footer p{
+    color: black;
+}
+
+.dark-mode footer a{
+    color: black;
+}
+
+.dark-mode .weather div{
         color: black;
     }
-    nav{
+.dark-mode header{
+        background-color: #999;
+    }
+.dark-mode h1{
+        color: black;
+    }
+.dark-mode nav{
         background-color: #555;
     }
-    .headline h2, p{
+.dark-mode .headline h2, p{
         color: #ccc;
     }
-    .photos img:hover{
+.dark-mode .photos img:hover{
         box-shadow: 0 0 50px #fffefe;
         border: 1px solid rgba(248, 242, 87, 0.3);
         padding: 1px;
     }
-    .joinform{
+.dark-mode .joinform{
         background-color: #999;
     }
-    .joinform input[type="text"], .joinform input[type="tel"], .joinform input[type="email"], #description{
+.dark-mode .joinform input[type="text"], .joinform input[type="tel"], .joinform input[type="email"], #description{
         background-color: #555;
         color: white;
     }
-    .discovercard p, span, ul, li{
+.dark-mode .discovercard p, span, ul, li{
         color: black;
     }
-}
+
 
 #directoryTable{
     font-size: 1vw;
