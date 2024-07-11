@@ -418,3 +418,49 @@ section#puerta {
     text-align: center;
     padding: 10px 0;;
 }
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    /* margin: 20px; */
+    background-color: aqua;
+    z-index: -1;
+    border: solid blue;
+    box-shadow: 5px 5px 5px darkblue;
+    border-radius: 3px;
+    flex-direction: column;
+}
+
+/* Hide all slides by default */
+.slide {
+    display: none;
+}
+
+/* Fade animation for slides */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Navigation dots */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .3s ease;
+}
+
+.active {
+    background-color: #717171;
+}
