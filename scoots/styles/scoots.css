@@ -425,7 +425,7 @@ section#puerta {
     position: relative;
     margin: auto;
     display: flex;
-    /* margin: 20px; */
+    text-decoration: underline;
     background-color: aqua;
     z-index: -1;
     border: solid blue;
