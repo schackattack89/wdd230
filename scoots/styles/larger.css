@@ -1,0 +1,100 @@
+@media screen and (min-width: 600px){
+    nav ul{
+     display: flex;
+     justify-content: space-around;
+    }
+    nav ul li{
+     flex: 100%;
+    }
+ 
+    .navigation{
+     display: flex;
+    }
+ 
+    .navigation li{
+     display: block;
+     flex: 1 1 100%;
+    }
+ 
+    .navigation a{
+     text-align: center;
+    }
+ 
+    #menu{
+     display: none;
+    }
+
+    #banner{
+        font-size: clamp(14px, 2em, 28px);
+        padding-bottom: 25px;
+        color: #9e4a00;
+    }
+
+    .icon-bar {
+        position: fixed;
+        top: 45%;
+        writing-mode: inherit;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      
+      .icon-bar a.facebook:hover {
+        background-color: #000;
+      }
+
+      .icon-bar a.instagram:hover {
+        background-color: #000;
+      }
+
+      .icon-bar a.twitter:hover {
+        background-color: #000;
+      }
+
+      a.social {
+        display: block;
+      }
+
+      .main-grid{
+        display: grid;
+        grid-template-columns: 5fr 3fr;
+      }
+
+      .weather{
+        height: 300px;
+        grid-column-start: 2;
+        grid-row-start: 1;
+        margin: 20px;
+        background-color: aqua;
+        border: solid blue;
+        box-shadow: 5px 5px 5px darkblue;
+        border-radius: 3px;
+      }
+      
+      .rental-options{
+        height: auto;
+        grid-column-start: 1;
+        margin: 20px;
+        background-color: aqua;
+        border: solid blue;
+        box-shadow: 5px 5px 5px darkblue;
+        border-radius: 3px;
+      }
+    
+}
+
+@media screen and (min-width: 1080px) {
+    h1{
+        display: inline-block;
+        width: 100%
+    }
+    h2{
+        display: flex;
+        width: 80%;
+    }
+    .weather h2, .rental-options h2{
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+}

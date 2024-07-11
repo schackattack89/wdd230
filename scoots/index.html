@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoots Vacation Rentals - Cozumel, Mexico</title>
+  <meta name="author" content="Edward Schack">
+  <meta name="description" content="Scoots Scotter Rental, Vacation Rentals, Cozumel, Mexico, Play del Carmen, Costa Maya, Cruise Excursions, WDD 230 - Web Frontend Development, Final Project, Edward Schack">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/scoots.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta property="og:title" content="Edward Schack - WDD 230 - Web Frontend Development">
+  <meta property="og:description" content="website">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://schackattack89.github.io/wdd230/scoots/images/meta-img.webp">
+  <meta property="og:url" content="https://schackattack89.github.io/wdd230/scoots/index.html">
+  <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+    <div id="banner">
+        <button id="closeButton">❌</button>
+        <section id="highTemp"></section>
+    </div>
+    <header class="header">
+        <img class="logo" src="images/logo.webp" alt="Scooter Logo" width="150" height="150">
+        <h1>Welcome to SCOOTS!</h1>
+        <h2>Scooter, ATV, and Jeep Rentals in Cozumel, Mexico</h2>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="rentals.html">Rental Info</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact Scoots</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <picture>
+            <img src="images/hero.webp" alt="Cozumel Plaza Sign" loading="lazy">
+        </picture>
+        <a href="reservations.html" class="herolabel">
+            <span>Make A Reservation</span>
+        </a>
+    </div>
+    <div class="icon-bar">
+        <a class="social">Social<br>Links</a>
+        <a href="https://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.x.com" class="twitter"><i class="fa fa-twitter"></i></a>
+    </div>
+    <main class="main-grid"> 
+
+        <div class="weather">
+            <h2>Current Weather</h2>
+            <section id="current-weather"></section>
+            <h2 id="forecast">Tomorrow's High</h2>
+            <section id="tomorrow"></section>
+        </div>
+        
+        <div class="rental-options">
+            <h2>Rental Vehicles We Offer</h2>
+            <section id="vehicles">
+                <img src="images/moped-scooter.webp" id="lefties">
+                <p>Scooters & Mopeds</p>
+                <img src="images/atv.webp" id="righties">
+                <p>Offroad ATVs</p>
+                <img src="images/Jeep.webp" id="lefties">
+                <p>Jeeps</p>
+                <img src="images/side-by-side.webp" id="righties">
+                <p>Side-by-Sides</p>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <figure>
+            <a href="https://www.facebook.com"><img src="images/facebook.webp" alt="Facebook Logo"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.webp" alt="Instagram Logo"></a>
+            <a href="https://www.x.com"><img src="images/twitterx.webp" alt="Twitter/X Logo"></a>
+            <a href="attributions.html">(Attributions)</a>
+        </figure>
+        <p>3389 Plaza de Cortez, Cozumel, MX</p>
+        <p>ph: +52 12 5555 6789    fax: 888-070-4545</p>
+        <p id="year">&copy;Current Year</p>
+        <p id="lastModified">Last Modified Placeholder</p>
+    </footer>
+  
+    <script src="scripts/navmenu.js"></script>
+    <script src="scripts/getdates.js"></script> 
+    <script src="scripts/banner.js"></script>
+</body>
+</html>
