@@ -33,6 +33,7 @@
     .icon-bar {
         position: fixed;
         top: 45%;
+        right: 0;
         writing-mode: inherit;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -80,6 +81,22 @@
         box-shadow: 5px 5px 5px darkblue;
         border-radius: 3px;
       }
+
+        .locations {
+            text-align: center;
+        }
+        
+        .locations-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            margin: 20px;
+        }
+        
+        .locations img{
+            width: 100%;
+            border-radius: 30px;
+        }
     
 }
 

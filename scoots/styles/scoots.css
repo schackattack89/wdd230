@@ -367,10 +367,54 @@ a.social{
     box-shadow: 5px 5px 10px darkred;
   }
 
-  #vehicles p {
+  #vehicles h3 {
     text-align: center;
-    margin: 50px;
-    padding: 20px;
+    margin-bottom: 0px;
+    padding: 0px;
     font-size: 1.5em;
     font-weight: bold;
+}
+
+.rental-summary p{
+    margin: 0;
+    padding: 0px 15px;
+    padding-top: 5px;
+}
+
+section#playa {
+    background: aqua;
+    box-shadow: 5px 5px 5px darkblue;
+    border-radius: 25px;
+}
+
+section#puerto {
+    background: aqua;
+    box-shadow: 5px 5px 5px darkblue;
+    border-radius: 25px;
+}
+
+.locations {
+    display: flex;
+    flex-direction: column;
+}
+
+.locations h3 {
+    text-align: center;
+    padding: 10px 0 0 0;
+    margin: 10px 0px;
+}
+
+.locations img {
+    width: 100%;
+    scale: .9;
+    border-radius: inherit;
+}
+
+.locations h2 {
+    font-size: clamp(14px, 4vw, 46px);
+    text-decoration: underline;
+    background: #f9ffa3;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;;
 }
