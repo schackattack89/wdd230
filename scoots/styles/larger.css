@@ -127,4 +127,7 @@
       margin: auto;
       padding: 10px 0px;
     }
+    .locations h2 {
+      display: block;
+  }
 }
