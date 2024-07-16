@@ -5,10 +5,10 @@
 body{
     font-family: "DM Serif Display", serif;
     background-image: url('https://schackattack89.github.io/wdd230/scoots/images/ocean.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-size: 100% 100%;
+    background-position: left;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('https://schackattack89.github.io/wdd230/scoots/images/ocean.webp');
+
 }
 
 header{
@@ -246,7 +246,7 @@ figure img{
   }
 
   #banner {
-    background-color: #a14e4e33;
+    background-color: #a14e4e85;
     color: #5c2b00;
     position: relative;
     top: 0;
@@ -388,16 +388,19 @@ a.social{
     padding-top: 5px;
 }
 
-section#playa {
+section#playa, section#puerta, .contact-us {
     background: aqua;
     box-shadow: 5px 5px 5px darkblue;
     border-radius: 25px;
 }
 
-section#puerta {
-    background: aqua;
-    box-shadow: 5px 5px 5px darkblue;
-    border-radius: 25px;
+.contact-us h2{
+    text-decoration: underline;
+    text-align: center;
+    width: 100%;
+    color: #90133f;
+    margin: 0 auto;
+    font-size: clamp(16px, 4vw, 40px);
 }
 
 .locations {
@@ -421,7 +424,7 @@ section#puerta {
     font-size: clamp(14px, 4vw, 46px);
     text-decoration: underline;
     background: #f9ffa3;
-    margin: 0 auto;
+    margin: 20px auto 0px auto;
     text-align: center;
     padding: 10px 0;;
 }
