@@ -883,6 +883,10 @@ section {
     padding: 0;
     font-size: clamp(12px, 1.5vw, 16px);
   }
+
+  p{
+    color: var(--paragraph-color-on-white);
+  }
 @media screen and (min-width: 600px){
     .photos img:hover{
         box-shadow: 0 0 50px #333;
