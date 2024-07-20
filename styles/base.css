@@ -291,3 +291,8 @@ h4{
     text-align: center;
     padding: 5px;
 }
+
+li{
+    padding: 10px;
+    font-family: serif;
+}

@@ -26,7 +26,7 @@ const displayLinks = (lessons) => {
             let firstActivity = document.createElement('a');
             let secondActivity = document.createElement('a');
             firstActivity.setAttribute('href', week.links[0].url);
-            firstActivity.innerHTML = `${week.links[0].title} | `;
+            firstActivity.innerHTML = `${week.links[0].title}     |     `;
             weekNumber.appendChild(firstActivity);
             secondActivity.setAttribute('href', week.links[1].url);
             secondActivity.innerHTML = `${week.links[1].title}`;
@@ -38,11 +38,11 @@ const displayLinks = (lessons) => {
             let thirdActivity = document.createElement('a');
 
             firstActivity.setAttribute('href', week.links[0].url);
-            firstActivity.innerHTML = `${week.links[0].title} | `;
+            firstActivity.innerHTML = `${week.links[0].title}     |     `;
             weekNumber.appendChild(firstActivity);
 
             secondActivity.setAttribute('href', week.links[1].url);
-            secondActivity.innerHTML = `${week.links[1].title} | `;
+            secondActivity.innerHTML = `${week.links[1].title}     |     `;
             weekNumber.appendChild(secondActivity);
 
             thirdActivity.setAttribute('href', week.links[2].url);
