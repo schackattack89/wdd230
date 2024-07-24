@@ -388,24 +388,25 @@ a.social{
     padding-top: 5px;
 }
 
-section#playa, section#puerta, .contact-us, .contact-info, .reserve, .conditions{
+section#playa, section#puerta, .contact-us, .contact-info, .reserve, .conditions, .rent-rates{
     background: aqua;
     box-shadow: 5px 5px 5px darkblue;
     border-radius: 25px;
     margin-top: 20px;
 }
 
-.contact-info, .contact-us, .reserve, .conditions{
+.contact-info, .contact-us, .reserve, .conditions, .rent-rates{
     margin-right: 10px;
     margin-left: 10px;
 }
 
-.contact-us h2, .contact-info h2, .reserve h2, .conditions h2{
+.contact-us h2, .contact-info h2, .reserve h2, .conditions h2, .rent-rates h2{
     text-decoration: underline;
     text-align: center;
     width: 100%;
     color: #90133f;
     margin: 0 auto;
+    padding: 10px 0px;
     font-size: clamp(16px, 4vw, 40px);
 }
 
@@ -489,7 +490,7 @@ section#playa, section#puerta, .contact-us, .contact-info, .reserve, .conditions
 }
 #signup{
     display: block;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
 
 }
@@ -571,4 +572,58 @@ label{
 .conditions li{
     font-size: 2vw;
     margin: 10px auto;
+}
+
+table{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    /* border: #9d2020 solid; */
+    padding: 20px 0px;
+}
+
+.res-cell{
+    background-color: darkblue;
+    color: white;
+}
+
+.walk-cell{
+    background-color: #f9ffa3;
+    color: black;
+}
+
+td img{
+    max-width: 100px;
+}
+
+td img:hover{
+    transform: scale(2);
+}
+
+#tableBody{
+    text-align: center;
+}
+
+#rentalsTbl td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#rentalsTbl tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#rentalsTbl tbody tr:nth-child(odd) {
+    background-color: #a2a1a1;
+}
+
+.rent-rates{
+    padding-bottom: 20px;
+}
+
+thead{
+    font-size: 2.2vw;
+    text-decoration: underline;
 }

@@ -15,7 +15,8 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://schackattack89.github.io/wdd230/scoots/images/meta-img.webp">
   <meta property="og:url" content="https://schackattack89.github.io/wdd230/scoots/index.html">
-  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/rentalprices.js" defer></script>
+
 </head>
 <body>
   <header class="header">
@@ -41,7 +42,28 @@
         </a>
     </div>
     <main> 
-
+      <div class="rent-rates">
+        <h2>Current Rental Rates</h2>
+        <table id="rentalsTbl">
+          <thead>
+            <tr>
+              <td colspan="3"></td>
+              <th colspan="2" class="res-cell">Reservation Price</th>
+              <th colspan="2" class="walk-cell">Walk-In Price</th>
+            </tr>
+            <tr>
+              <th class="vehicle-image"></th>
+              <th>Rental Type</th>
+              <th>Max Persons</th>
+              <th class="res-cell">Half Day</th>
+              <th class="res-cell">Full Day</th>
+              <th class="walk-cell">Half Day</th>
+              <th class="walk-cell">Full Day</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
     </main>
 
     <footer>
@@ -58,6 +80,5 @@
   </footer>
   <script src="scripts/navmenu.js"></script>
   <script src="scripts/getdates.js"></script> 
-  <script src="scripts/localstorage.js"></script>
 </body>
 </html>
