@@ -388,13 +388,19 @@ a.social{
     padding-top: 5px;
 }
 
-section#playa, section#puerta, .contact-us {
+section#playa, section#puerta, .contact-us, .contact-info {
     background: aqua;
     box-shadow: 5px 5px 5px darkblue;
     border-radius: 25px;
+    margin-top: 20px;
 }
 
-.contact-us h2{
+.contact-info, .contact-us{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.contact-us h2, .contact-info h2{
     text-decoration: underline;
     text-align: center;
     width: 100%;
@@ -426,7 +432,7 @@ section#playa, section#puerta, .contact-us {
     background: #f9ffa3;
     margin: 20px auto 0px auto;
     text-align: center;
-    padding: 10px 0;;
+    padding: 10px 15px;;
 }
 
 #google, #google2{
@@ -434,7 +440,6 @@ section#playa, section#puerta, .contact-us {
     margin: 0 auto;
 }
 
-/* Slideshow container */
 .slideshow-container {
     max-width: 800px;
     position: relative;
@@ -449,12 +454,10 @@ section#playa, section#puerta, .contact-us {
     flex-direction: column;
 }
 
-/* Hide all slides by default */
 .slide {
     display: none;
 }
 
-/* Fade animation for slides */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -465,7 +468,6 @@ section#playa, section#puerta, .contact-us {
     to {opacity: 1}
 }
 
-/* Navigation dots */
 .dot {
     height: 15px;
     width: 15px;
@@ -478,4 +480,40 @@ section#playa, section#puerta, .contact-us {
 
 .active {
     background-color: #717171;
+}
+
+.contact-info p, .locations p, .contact-us p{
+    text-align: center;
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+#signup{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+
+}
+.joinform{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    justify-self: center;
+    margin: .5em auto;
+    padding: .9em;
+    background-color: #f5ea88;
+    border-radius: 4px;
+}
+.joinform input[type="text"],
+.joinform input[type="email"],
+#comments
+{
+    background-color: #f5efbb;
+    display: flex;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: black;
+    width: 90%;
+    appearance: none;
 }
