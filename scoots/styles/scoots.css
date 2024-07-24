@@ -573,9 +573,10 @@ label{
 
 .conditions{
     display: none;
+    height: fit-content;
 }
 
 .conditions li{
-    font-size: 2em;
+    font-size: 2vw;
     margin: 10px auto;
 }
