@@ -16,6 +16,8 @@ const displayPrices = (rentals) => {
         const photo = document.createElement('td');
         const photoImg = document.createElement('img');
         photoImg.setAttribute('src', rental.imgURL);
+        photoImg.setAttribute('loading', 'lazy');
+        photoImg.setAttribute('alt', rental.vehicle);
         photo.appendChild(photoImg);
         tableRow.appendChild(photo);
 
