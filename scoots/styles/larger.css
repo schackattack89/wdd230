@@ -124,12 +124,14 @@
       .conditions{
         display: grid;
         grid-column-start: 2;
+        height: fit-content;
       }
       #popup-link{
         pointer-events: none; /* Disable clicking on the link */
         color: inherit; /* Use the default text color */
         text-decoration: none; /* Remove underline */
       }
+
     
 }
 
