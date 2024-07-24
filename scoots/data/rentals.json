@@ -1,0 +1,106 @@
+{
+    "rentals" : [
+        {
+            "vehicle" : "Honda Metro Scooter",
+            "maxPersons" : "1",
+            "imgURL" : "https://schackattack89.github.io/wdd230/scoots/images/metro.webp",
+            "reservation" : [
+                {
+                    "half" : "$20",
+                    "full" : "$30"
+                }
+            ],
+            "walkin" : [
+                {
+                    "half" : "$25",
+                    "full" : "$35"
+                }
+            ]
+        },
+        {
+            "vehicle" : "Honda Dio Scooter",
+            "maxPersons" : "2",
+            "imgURL" : "https://schackattack89.github.io/wdd230/scoots/images/dio.webp",
+            "reservation" : [
+                {
+                    "half" : "$30",
+                    "full" : "$40"
+                }
+            ],
+            "walkin" : [
+                {
+                    "half" : "$35",
+                    "full" : "$45"
+                }
+            ]
+        },
+        {
+            "vehicle" : "Honda PCX150 Scooter",
+            "maxPersons" : "2",
+            "imgURL" : "https://schackattack89.github.io/wdd230/scoots/images/pcx150.webp",
+            "reservation" : [
+                {
+                    "half" : "$40",
+                    "full" : "$50"
+                }
+            ],
+            "walkin" : [
+                {
+                    "half" : "$45",
+                    "full" : "$55"
+                }
+            ]
+        },
+        {
+            "vehicle" : "Honda Pioneer ATV",
+            "maxPersons" : "4",
+            "imgURL" : "https://schackattack89.github.io/wdd230/scoots/images/pioneer.webp",
+            "reservation" : [
+                {
+                    "half" : "$50",
+                    "full" : "$70"
+                }
+            ],
+            "walkin" : [
+                {
+                    "half" : "$60",
+                    "full" : "$80"
+                }
+            ]
+        },
+        {
+            "vehicle" : "Jeep Wrangler - 4 Door w/ AC",
+            "maxPersons" : "5",
+            "imgURL" : "https://schackattack89.github.io/wdd230/scoots/images/wrangler4dr.webp",
+            "reservation" : [
+                {
+                    "half" : "$70",
+                    "full" : "$100"
+                }
+            ],
+            "walkin" : [
+                {
+                    "half" : "$85",
+                    "full" : "$125"
+                }
+            ]
+        },
+        {
+            "vehicle" : "Jeep Wrangler - 2 Door",
+            "maxPersons" : "4",
+            "imgURL" : "https://schackattack89.github.io/wdd230/scoots/images/wrangler2dr.webp",
+            "reservation" : [
+                {
+                    "half" : "$60",
+                    "full" : "$85"
+                }
+            ],
+            "walkin" : [
+                {
+                    "half" : "$70",
+                    "full" : "$90"
+                }
+            ]
+        }
+    ]
+}

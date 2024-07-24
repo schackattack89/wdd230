@@ -527,7 +527,7 @@ label{
 }
 
 .popup {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -539,7 +539,6 @@ label{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Overlay styles */
 .overlay {
     display: none;
     position: fixed;
@@ -551,12 +550,10 @@ label{
     z-index: 900;
 }
 
-/* Centered content inside the popup */
 .popup-content {
     text-align: center;
 }
 
-/* Close button styles */
 .close {
     position: absolute;
     top: 10px;
@@ -564,11 +561,6 @@ label{
     cursor: pointer;
     font-size: 20px;
     color: #aaa;
-}
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
 }
 
 .conditions{
