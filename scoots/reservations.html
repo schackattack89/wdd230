@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reservations - SCOOTS Vacation Rentals (Cozumel)</title>
-  <meta name="author" content="Edward Schack">
-  <meta name="description" content="Reservations, Scheduling, Availability, Scoots Scotter Rental, Vacation Rentals, Cozumel, Mexico, Play del Carmen, Costa Maya, Cruise Excursions, WDD 230 - Web Frontend Development, Final Project, Edward Schack">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/scoots.css">
-  <link rel="stylesheet" href="styles/larger.css">
-  <link rel="icon" href="images/favicon.ico">
-  <meta property="og:title" content="Reservations - SCOOTS Vacation Rentals (Cozumel)">
-  <meta property="og:description" content="website">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://schackattack89.github.io/wdd230/scoots/images/meta-img.webp">
-  <meta property="og:url" content="https://schackattack89.github.io/wdd230/scoots/index.html">
-  <script src="scripts/weather.js" defer></script>
-</head>
-<body>
-  <header class="header">
-    <img class="logo" src="images/logo.webp" alt="Scooter Logo" width="150" height="150">
-    <h1>Welcome to SCOOTS!</h1>
-    <h2>Scooter, ATV, and Jeep Rentals in Cozumel, Mexico</h2>
-  </header>
-  <a id="menu" href="#"></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservations - SCOOTS Vacation Rentals (Cozumel)</title>
+    <meta name="author" content="Edward Schack" />
+    <meta
+      name="description"
+      content="Reservations, Scheduling, Availability, Scoots Scotter Rental, Vacation Rentals, Cozumel, Mexico, Play del Carmen, Costa Maya, Cruise Excursions, WDD 230 - Web Frontend Development, Final Project, Edward Schack"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/scoots.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <meta
+      property="og:title"
+      content="Reservations - SCOOTS Vacation Rentals (Cozumel)"
+    />
+    <meta property="og:description" content="website" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://schackattack89.github.io/wdd230/scoots/images/meta-img.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://schackattack89.github.io/wdd230/scoots/index.html"
+    />
+    <script src="scripts/weather.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="logo"
+        src="images/logo.webp"
+        alt="Scooter Logo"
+        width="150"
+        height="150"
+      />
+      <h1>Welcome to SCOOTS!</h1>
+      <h2>Scooter, ATV, and Jeep Rentals in Cozumel, Mexico</h2>
+    </header>
+    <a id="menu" href="#"></a>
     <nav>
       <ul class="navigation">
         <li><a href="index.html">Home</a></li>
@@ -33,31 +51,199 @@
       </ul>
     </nav>
     <div class="hero">
-        <picture>
-            <img src="images/hero.webp" alt="Cozumel Plaza Sign" loading="lazy">
-        </picture>
-        <a href="reservations.html" class="herolabel">
-            <span>Make A Reservation</span>
-        </a>
+      <picture>
+        <img src="images/hero.webp" alt="Cozumel Plaza Sign" loading="lazy" />
+      </picture>
+      <a href="reservations.html" class="herolabel">
+        <span>Make A Reservation</span>
+      </a>
     </div>
-    <main> 
+    <main>
+      <div class="reservations-grid">
+        <div class="reserve">
+          <h2>Schedule Your Reservation Today!</h2>
 
+          <form
+            class="joinform"
+            method="get"
+            action="reservereceipt.html"
+            class="webform"
+          >
+            <fieldset>
+              <label
+                >Pick-Up Date*
+                <input
+                  type="date"
+                  name="date"
+                  id="date"
+                  min="<?php echo date('Y-m-d'); ?>"
+                  required>
+              </label>
+              <label
+                >Drop-Off Date*
+                <input
+                  type="date"
+                  name="date"
+                  id="date"
+                  min="<?php echo date('Y-m-d'); ?>"
+                  required>
+              </label>
+              <label for="dropdown">Select Your Rental*</label>
+              <select id="dropdown" name="dropdown">
+                <option value="" disabled selected>...</option>
+                <optgroup label="Scooters">
+                  <option value="honda1">Honda Metro Scooter</option>
+                  <option value="honda2">Honda Dio Scooter</option>
+                  <option value="honda3">Honda PCX150 Scooter</option>
+                </optgroup>
+                <optgroup label="ATVs">
+                  <option value="atv">Honda Pioneer ATV</option>
+                </optgroup>
+                <optgroup label="Jeeps">
+                  <option value="jeep1">Jeep Wrangler - 4 Door w/ AC</option>
+                  <option value="jeep2">Jeep Wrangler - 2 Door</option>
+                </optgroup>
+              </select>
+              <label
+                >Quantity*
+                <input
+                  type="number"
+                  name="quantity"
+                  id="quantity"
+                  placeholder="How many vehicles do you need (Max 5)"
+                  min="1"
+                  max="5"
+              /></label>
+              <label
+                >Name*
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="John Smith"
+                  required
+              /></label>
+              <label
+                >Phone Number*
+                <input
+                  type="phone"
+                  name="phone"
+                  id="phone"
+                  placeholder="xxx-xxx-xxxx"
+                  required
+              /></label>
+              <label
+                >Email*
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="johnsmith@example.com"
+                  required
+              /></label>
+              <label
+                >State or Country*
+                <input
+                  type="text"
+                  name="state"
+                  id="state"
+                  placeholder="Place of Residence"
+                  required
+              /></label>
+              <label
+                >Cruiseline
+                <input
+                  type="text"
+                  name="cruise"
+                  id="cruise"
+                  placeholder="Not cruising? Leave blank."
+              /></label>
+              <label
+                >Additional Requests<textarea
+                  id="comments"
+                  rows="5"
+                  columns="50"
+                  placeholder="Special requests or accommodations (extra needs, drop-off location, etc.)"
+                ></textarea>
+              </label>
+              <label
+                ><input type="checkbox" id="agree" name="agree" required /> I
+                have read and agree to the
+                <a href="#" id="popup-link">terms and conditions.</a>
+              </label>
+            </fieldset>
+
+            <label
+              ><input
+                id="signup"
+                type="submit"
+                value="Schedule Your Reservation"
+            /></label>
+          </form>
+        </div>
+
+        <div class="conditions">
+          <h2>Rental Terms and Conditions</h2>
+          <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at the time of rental.</li>
+            <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+            <li>Fuel charge is not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is included.</li>
+            <li>Damage insurance is available for purchase.</li>
+            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+            <li>Rentals may be returned to either physical location.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Popup box -->
+      <div id="popup" class="popup">
+        <span class="close" id="close-popup">&times;</span>
+        <div class="popup-content">
+          <h2>Rental Terms and Conditions</h2>
+            <p>* A $50 security deposit is required to confirm reservations.</p>
+            <p>* A valid drivers license is required in hand at the time of rental.</p>
+            <p>* No one under the age of 12 years of age are allowed to ride on the scooters.</p>
+            <p>* Fuel charge is not included.</p>
+            <p>* Unlimited mileage.</p>
+            <p>* Liability insurance is included.</p>
+            <p>* Damage insurance is available for purchase.</p>
+            <p>* Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</p>
+            <p>* Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</p>
+            <p>* Rentals may be returned to either physical location.</p>
+        </div>
+      </div>
+
+      <!-- Overlay to darken the background when popup is open -->
+      <div id="overlay" class="overlay"></div>
     </main>
 
     <footer>
       <figure>
-          <a href="https://www.facebook.com"><img src="images/facebook.webp" alt="Facebook Logo"></a>
-          <a href="https://www.instagram.com"><img src="images/instagram.webp" alt="Instagram Logo"></a>
-          <a href="https://www.x.com"><img src="images/twitterx.webp" alt="Twitter/X Logo"></a>
-          <a href="attributions.html">(Attributions)</a>
+        <a href="https://www.facebook.com"
+          ><img src="images/facebook.webp" alt="Facebook Logo"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="images/instagram.webp" alt="Instagram Logo"
+        /></a>
+        <a href="https://www.x.com"
+          ><img src="images/twitterx.webp" alt="Twitter/X Logo"
+        /></a>
+        <a href="attributions.html">(Attributions)</a>
       </figure>
       <p>3389 Plaza de Cortez, Cozumel, MX</p>
-      <p>ph: +52 12 5555 6789    fax: 888-070-4545</p>
+      <p>ph: +52 12 5555 6789 fax: 888-070-4545</p>
       <p id="year">&copy;Current Year</p>
       <p id="lastModified">Last Modified Placeholder</p>
-  </footer>
-  <script src="scripts/navmenu.js"></script>
-  <script src="scripts/getdates.js"></script> 
-  <script src="scripts/localstorage.js"></script>
-</body>
+    </footer>
+    <script src="scripts/navmenu.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/localstorage.js"></script>
+    <script src="scripts/nopast.js"></script>
+    <script src="scripts/quantitylimiter.js"></script>
+    <script src="scripts/termspopup.js"></script>
+  </body>
 </html>

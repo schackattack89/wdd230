@@ -110,6 +110,26 @@
           max-width: 50%;
           margin: 0 auto;
       }
+
+      .reservations-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+      }
+
+      .reserve{
+        display: grid;
+        grid-column-start: 1;
+      }
+      .conditions{
+        display: grid;
+        grid-column-start: 2;
+      }
+      #popup-link{
+        pointer-events: none; /* Disable clicking on the link */
+        color: inherit; /* Use the default text color */
+        text-decoration: none; /* Remove underline */
+      }
     
 }
 
@@ -133,7 +153,7 @@
       margin: auto;
       padding: 10px 0px;
     }
-    .locations h2, .contact-us h2, .contact-info h2 {
+    .locations h2, .contact-us h2, .contact-info h2, .reserve h2, .conditions h2{
       display: block;
     }
 }
