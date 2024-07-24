@@ -47,14 +47,14 @@
       <div class="reserve">
         <h2>Schedule Your Reservation Today!</h2>
 
-        <form class="joinform" method="get" action="reservereceipt.html" class="webform">
+        <form class="joinform" method="get" action="reservereceipt.html">
           <h3>Reservation Details</h3>
           <fieldset>
             <label>Pick-Up Date*
-              <input type="date" name="date" id="date" min="<?php echo date('Y-m-d'); ?>" required>
+              <input type="date" name="sdate" id="sdate" required>
             </label>
             <label>Drop-Off Date*
-              <input type="date" name="date" id="date" min="<?php echo date('Y-m-d'); ?>" required>
+              <input type="date" name="edate" id="edate" required>
             </label>
             <label for="dropdown">Select Your Rental*</label>
             <select id="dropdown" name="dropdown">
@@ -81,7 +81,7 @@
             <label>Name*
               <input type="text" name="name" id="name" placeholder="John Smith" required></label>
             <label>Phone Number*
-              <input type="phone" name="phone" id="phone" placeholder="xxx-xxx-xxxx" required></label>
+              <input type="tel" name="phone" id="phone" placeholder="xxx-xxx-xxxx" required></label>
             <label>Email*
               <input type="email" id="email" name="email" placeholder="johnsmith@example.com" required></label>
             <label>State or Country*
@@ -91,7 +91,7 @@
           <fieldset>
             <label>Cruiseline (if applicable)
               <input type="text" name="cruise" id="cruise" placeholder="Not cruising? Leave blank."></label>
-            <label>Additional Requests<textarea id="comments" rows="5" columns="50"
+            <label>Additional Requests<textarea id="comments" rows="5"
                 placeholder="Special requests or accommodations (extra needs, drop-off location, etc.)"></textarea>
             </label>
             <label><input type="checkbox" id="agree" name="agree" required> I
@@ -157,8 +157,8 @@
   </footer>
   <script src="scripts/navmenu.js"></script>
   <script src="scripts/getdates.js"></script>
-  <script src="scripts/localstorage.js"></script>
-  <script src="scripts/nopast.js"></script>
+  <!-- <script src="scripts/localstorage.js"></script> -->
+  <!-- <script src="scripts/nopast.js"></script> -->
   <script src="scripts/quantitylimiter.js"></script>
   <script src="scripts/termspopup.js"></script>
 </body>

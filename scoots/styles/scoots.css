@@ -246,8 +246,8 @@ figure img{
   }
 
   #banner {
-    background-color: #a14e4e85;
-    color: #5c2b00;
+    background-color: #f39d9d85;
+    color: #743700;
     position: relative;
     top: 0;
     left: 0;
@@ -360,7 +360,7 @@ a.social{
     font-weight: bolder;
   }
 
-  #lefties{
+  .lefties{
     float: left;
     margin: 30px;
     border-radius: 15px;
@@ -479,9 +479,10 @@ section#playa, section#puerta, .contact-us, .contact-info, .reserve, .conditions
     transition: background-color .3s ease;
 }
 
-.active {
+/* .active {
     background-color: #717171;
-}
+    color: black;
+} */
 
 .contact-info p, .locations p, .contact-us p{
     text-align: center;
@@ -508,7 +509,7 @@ section#playa, section#puerta, .contact-us, .contact-info, .reserve, .conditions
 .joinform input[type="text"],
 .joinform input[type="email"],
 .joinform input[type="date"],
-.joinform input[type="phone"],
+.joinform input[type="tel"],
 .joinform input[type="number"],
 #comments, #dropdown
 {

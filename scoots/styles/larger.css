@@ -27,7 +27,7 @@
     #banner{
         font-size: clamp(14px, 2em, 28px);
         padding-bottom: 25px;
-        color: #9e4a00;
+        color: #743700;
     }
 
     .icon-bar {
@@ -127,9 +127,8 @@
         height: fit-content;
       }
       #popup-link{
-        pointer-events: none; /* Disable clicking on the link */
-        color: inherit; /* Use the default text color */
-        text-decoration: none; /* Remove underline */
+        color: inherit; 
+        text-decoration: none; 
       }
 
     

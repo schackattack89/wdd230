@@ -13,7 +13,7 @@ const getWeather = async (URL) => {
     const response = await fetch(URL);
     if(response.ok){
         weatherList = await response.json();
-        console.log(weatherList);
+        // console.log(weatherList);
     }
     displayWeather(weatherList);
 }
@@ -22,7 +22,7 @@ const getForecast = async (URL) => {
     const response = await fetch(URL);
     if(response.ok){
         forecastList = await response.json();
-        console.log(forecastList);
+        // console.log(forecastList);
     }
     displayForecast(forecastList);
 }
