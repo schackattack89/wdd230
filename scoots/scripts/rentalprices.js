@@ -5,7 +5,7 @@ const rentalTable = document.querySelector('#tableBody');
 async function getRentalData() {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data.rentals);
+    // console.log(data.rentals);
     displayPrices(data.rentals);
 }
 
