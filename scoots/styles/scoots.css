@@ -634,7 +634,7 @@ thead{
     margin-right: 10px;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 400px){
     .rent-rates table{
         width: 100%;
         max-width: 100%;
