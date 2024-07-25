@@ -641,18 +641,10 @@ thead{
         table-layout: fixed;
     }
     .rent-rates img{
-        display: none;
+        transform: scale(.25);
+        margin-left: -20px;
     }
     #tableBody tr{
         font-size: 2vw;
-    }
-    #vehicle-type1:active{
-        #rental-image1{
-            display: block;
-            transform: scale(2);
-        }
-    }
-    .hero:active{
-        display: none;
     }
 }
