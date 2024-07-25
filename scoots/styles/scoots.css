@@ -646,13 +646,13 @@ thead{
     #tableBody tr{
         font-size: 2vw;
     }
-    #vehicle-type1:focus{
+    #vehicle-type1:active{
         #rental-image1{
             display: block;
             transform: scale(2);
         }
     }
-    .hero:focus{
+    .hero:active{
         display: none;
     }
 }
