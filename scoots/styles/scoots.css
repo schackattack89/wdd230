@@ -633,7 +633,26 @@ thead{
     transform: scale(2);
     margin-right: 10px;
 }
-#agreeLabel{
-    padding-left: 10px;
-    margin-left: 10px;
+
+@media screen and (max-width: 375px){
+    .rent-rates table{
+        width: 100%;
+        max-width: 100%;
+        table-layout: fixed;
+    }
+    .rent-rates img{
+        display: none;
+    }
+    #tableBody tr{
+        font-size: 2vw;
+    }
+    #vehicle-type1:focus{
+        #rental-image1{
+            display: block;
+            transform: scale(2);
+        }
+    }
+    .hero:focus{
+        display: none;
+    }
 }

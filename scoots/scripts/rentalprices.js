@@ -9,6 +9,8 @@ async function getRentalData() {
     displayPrices(data.rentals);
 }
 
+let index = 1;
+
 const displayPrices = (rentals) => {
     rentals.forEach((rental) => {
         const tableRow = document.createElement('tr');
@@ -18,11 +20,13 @@ const displayPrices = (rentals) => {
         photoImg.setAttribute('src', rental.imgURL);
         photoImg.setAttribute('loading', 'lazy');
         photoImg.setAttribute('alt', rental.vehicle);
+        photoImg.id = `rental-img${index}`;
         photo.appendChild(photoImg);
         tableRow.appendChild(photo);
 
         const vehicle = document.createElement('td');
         vehicle.textContent = rental.vehicle;
+        vehicle.id = `vehicle-type${index}`;
         tableRow.appendChild(vehicle);
 
         const persons = document.createElement('td');
@@ -46,6 +50,8 @@ const displayPrices = (rentals) => {
         tableRow.appendChild(fullDayWalk)
 
         rentalTable.appendChild(tableRow);
+
+        index++;
     });
 }
 
